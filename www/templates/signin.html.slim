@@ -1,0 +1,10 @@
+.ion-view view-title="{{title}}"
+  .ion-content.padding
+    form ng-submit="signin(signinForm)" 
+      .list.list-inset
+        label.item.item-input
+          input type="text" placeholder="User ID" ng-model="signinForm.user_id"
+        label.item.item-input
+          input type="password" placeholder="Password" ng-model="signinForm.password"
+      button.button.button-positive.button-full type="submit"
+        | Login
